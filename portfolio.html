@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Istók Szabolcs – Portfólió / CV</title>
+  <meta name="description" content="Istók Szabolcs informatikus hallgató szakmai önéletrajza és portfóliója.">
+  <meta name="color-scheme" content="dark">
+  <style>
+    body {
+      background: #0b0f14;
+      color: #e6e9ef;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+    }
+
+    /* Konténer középre igazítása és szekciók térköze */
+    #app {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Profilkártya */
+    .profile-card {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      background: #11161d;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+    .profile-card .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #1f2937;
+    }
+    .profile-card .name {
+      margin: 0;
+      font-size: 28px;
+    }
+    .profile-card .role {
+      margin: 4px 0 8px;
+      color: #9aa4b2;
+    }
+    .profile-card .links a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    .profile-card .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Reszponzivitás 600px alatt */
+    @media (max-width: 600px) {
+      .profile-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .profile-card .avatar {
+        width: 84px;
+        height: 84px;
+      }
+    }
+
+    /* CV Kártya alapstílus */
+    .card {
+      background: #11161d;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 20px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 8px;
+    }
+
+    /* Tapasztalat és bejegyzések */
+    .entry {
+      margin-bottom: 16px;
+    }
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .subtitle {
+      margin: 2px 0 6px 0;
+      color: #9aa4b2;
+      font-size: 14px;
+    }
+    .date {
+      color: #8b949e;
+      font-size: 13px;
+    }
+    ul.bullets {
+      margin: 0;
+      padding-left: 20px;
+      color: #c9d1d9;
+    }
+    ul.bullets li {
+      margin-bottom: 4px;
+    }
+
+    /* Készség címkék (Chipek) */
+    .chip {
+      display: inline-block;
+      margin: 4px 6px 4px 0;
+      padding: 6px 12px;
+      border: 1px solid #1f2937;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 13px;
+      color: #c9d1d9;
+    }
+
+    /* Kapcsolat linkek */
+    .contact-links a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="app">
+
+    <!-- Profilkártya -->
+    <section class="profile-card">
+      <img class="avatar" src="profile.jpg" alt="Istók Szabolcs profilképe" />
+      <div class="meta">
+        <h1 class="name">Istok Szabolcs</h1>
+        <p class="role">Hallgató · Informatika</p>
+        <div class="links">
+          <a href="mailto:istszabi@gmail.com">Email</a> ·
+          <a href="https://github.com/istszabi" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bemutatkozás -->
+    <section class="card">
+      <h2>Bemutatkozás</h2>
+      <p>
+        Másodéves informatikus hallgató vagyok. Érdekel az objektumorientált backend fejlesztés, a hálózati technológiák és az aszinkron webes architektúrák gyakorlati megvalósítása.
+      </p>
+    </section>
+
+    <!-- Szakmai Tapasztalat (2 munkahely) -->
+    <section class="card">
+      <h2>Szakmai Tapasztalat</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <strong>Gyakornok szoftverfejlesztő</strong>
+          <span class="date">2026. nyár</span>
+        </div>
+        <p class="subtitle">AprilRed</p>
+        <ul class="bullets">
+          <li>Flutter mobilalkalmazás fejlesztése és felületi logikájának kialakítása.</li>
+          <li>REST API végpontok integrálása és aszinkron adatkezelés.</li>
+          <li>Kamerás funkcionalitások és helyi perzisztens adattárolás beépítése.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <strong>Projektfejlesztő (Szoftverarchitektúrák)</strong>
+          <span class="date">2025 – 2026</span>
+        </div>
+        <p class="subtitle">Egyetemi és önálló projektek</p>
+        <ul class="bullets">
+          <li>Objektumorientált rendszerek és adatstruktúrák tervezése C++ és Java nyelven.</li>
+          <li>Folyamatközi kommunikációs mechanizmusok és többszálú programozási megoldások implementálása.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Oktatás -->
+    <section class="card">
+      <h2>Oktatás</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <strong>Informatika alapképzés (BSc)</strong>
+          <span class="date">2024 – Jelenleg</span>
+        </div>
+        <p class="subtitle">UMFST, Marosvásárhely</p>
+      </div>
+    </section>
+
+    <!-- Készségek (Chipek) -->
+    <section class="card">
+      <h2>Készségek</h2>
+      <div>
+        <span class="chip">C / C++</span>
+        <span class="chip">Java</span>
+        <span class="chip">Flutter / Dart</span>
+        <span class="chip">HTML5 / CSS3</span>
+        <span class="chip">C#</span>
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">Linux</span>
+      </div>
+    </section>
+
+    <!-- Kapcsolat -->
+    <section class="card">
+      <h2>Kapcsolat</h2>
+      <p>Keress bátran az alábbi elérhetőségeken:</p>
+      <div class="contact-links">
+        <div>✉️ Email: <a href="mailto:istszabi@gmail.com">istszabi@gmail.com</a></div>
+        <div>🐙 GitHub: <a href="https://github.com/istszabi" target="_blank" rel="noopener">github.com/istszabi</a></div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
